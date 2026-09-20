@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-hyperlegible: 'Atkinson Hyperlegible', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-hyperlegible);
+    background-color: #f1f5f9;
+    color: #0f172a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .dark body {
+    background-color: #0b111e;
+    color: #f1f5f9;
+  }
+}
+
+/* Custom striped amber pattern for avoidable overrun */
+.striped-amber {
+  background-color: #d97706;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #d97706,
+    #d97706 6px,
+    #b45309 6px,
+    #b45309 12px
+  );
+}
+
+.dark .striped-amber {
+  background-color: #b45309;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #b45309,
+    #b45309 6px,
+    #92400e 6px,
+    #92400e 12px
+  );
+}
