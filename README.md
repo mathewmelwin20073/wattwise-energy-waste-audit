@@ -2,6 +2,8 @@
 
 **WattWise** is a web-based portal designed to help users track, audit, and analyze energy consumption to identify waste and optimize power usage efficiently.
 
+**Presentation Link:** https://www.canva.com/design/DAHWCGqeVas/_2aWPVOkFOPJXEq1WZPlKg/edit
+
 ---
 
 ## 🚀 Features
